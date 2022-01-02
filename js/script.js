@@ -10,15 +10,15 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
         arrows: false,
       });
 })
 // Single Product slider
 $(document).ready(function(){
     $('.single-product-slider').slick({
-        dots: true,
+        // dots: true,
         arrows: true,
         asNavFor: '.single-product-slider-bot'
     })

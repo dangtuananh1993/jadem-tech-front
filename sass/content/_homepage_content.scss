@@ -169,14 +169,14 @@
     &-slider {
         margin: 0 -15px;
         &-inner {
-            width: 16.66%;
+            // width: 16.66%;
             margin: 0 15px;
-            height: 120px;
-            align-items: center;
-            display: flex!important;
+            // height: 120px;
+            // align-items: center;
+            // display: flex!important;
 
             img {
-                width: 100%;
+                max-width: 100%;
 
             }
         }

@@ -1,4 +1,16 @@
-.category-news {
+.banner-news {
+    min-height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    p {
+        text-align: center;
+        padding-top: 150px;
+        font-size: 50px;
+        font-weight: 700;
+        color: $white-color;
+    }
+}
+.category-product {
     .category-tab {
         // display: flex;
         margin-top: 50px;
@@ -14,6 +26,16 @@
                 font-weight: 700;
                 position: relative;
                 @include transit(all, 1s);
+                // &::after {
+                //     content: '';
+                //     position: absolute;
+                //     width: 0%;
+                //     top: 100%;
+                //     left: 0;
+                //     height: 3px;
+                //     background-color: $main-color;
+                //     @include transit(all, 0.5s);
+                // }
                 &:hover {
                     cursor: pointer;
                     color: $white-color;
@@ -35,7 +57,7 @@
     }
     .row {
         display: none;
-        .category-news-col {
+        .category-product-col {
             @include col(33.33%);
         }
         .cp-background {
