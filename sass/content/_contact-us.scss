@@ -1,0 +1,97 @@
+.sale-card {
+    .sale-card-col {
+        @include col(33.33%);
+        &-outer {
+            padding: 15px;  
+            text-align: center;
+            background-color: $category-background-color;
+            border-radius: 15px;
+            color: $main-color;
+            
+            i {
+                padding: 10px;
+                border: 1px solid $main-color;
+                margin: 0 5px 0px 5px;
+                display: inline;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .img-frame {
+                position: relative;
+                height: 0;
+                padding-top: 100%;
+                img {
+                    display: block;
+                    width: 70%;
+                    height: 70%;
+                    margin-top: 45px;
+                    padding: 2px;
+                    background-color: $main-color;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0px;
+                    left: 50%;
+                    @include transformer(translateX(-50%));
+                    object-fit: cover
+                }
+            }
+            p.name {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            p.position {
+                margin-bottom: 15px;
+                display: none;
+            }
+            .sale-icon {
+                height: 36px;
+                margin-bottom: 30px;
+                &-inner {
+                    height: 36px;
+                    display: inline;
+                    a{
+                        color: $main-color;
+                    }
+                    .phone {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.address {
+    padding: 30px 0;
+    background-color: $category-background-color;
+    &-col {
+        @include col(calc(100%/2));
+    }
+    &-outer {
+        background-color: $white-color;
+        padding: 15px;
+        .address-title {
+            background-color: $main-color;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    }
+}
+.contact-form {
+    .wpcf7 {
+        
+        p {
+            width: 50%;
+            display: inline-block;
+        }
+    }
+}

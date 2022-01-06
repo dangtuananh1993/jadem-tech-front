@@ -24,12 +24,6 @@
         .single-product-slider {
             .single-product-slider-img {
                 box-sizing: border-box;
-                // height: 100%!important;
-                // align-items: center;
-                // display: flex!important;
-                // flex-direction: column;
-                // overflow: hidden;
-                // border: 1px solid $category-background-color;
                 &-inner {
                     position: relative;
                     padding-bottom: 100%;
@@ -53,7 +47,6 @@
             margin-top: 30px;
             .single-product-slider-img-bot {
                 padding: 15px;
-                // width: 33.33%;
                 box-sizing: border-box;
                 &-inner {
                     position: relative;
@@ -208,17 +201,45 @@
         text-align: center;
         color: $main-color;
     }
+    
     &-slider {
         margin: 0 -15px;
-        &-img {
-            width: 25%;
-            box-sizing: border-box;
+        .rps-outer {
             padding: 15px;
-            .rps-img {
-                width: 100%;
-                display: block;
-                object-fit: cover;
-                border: 1px solid $category-background-color;
+            
+            // border: 1px solid $category-background-color;
+        }
+        &-img {
+            border: 1px solid $category-background-color;
+            box-sizing: border-box;
+            overflow: hidden;
+            &:hover {
+            h3 {
+                color: $main-color;
+            }
+        }
+            &-inner {
+                position: relative;
+                padding-bottom: 100%;
+                height: 0;
+                .rps-img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    // border: 1px solid $category-background-color;
+                    box-sizing: border-box;
+                    @include transit (all, 0.5s);
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+            h3 {
+                text-align: center;
+                text-transform: uppercase;
             }
         }
     }

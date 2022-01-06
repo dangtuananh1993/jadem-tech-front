@@ -65,4 +65,13 @@ $(document).ready(function(){
         else sticky.removeClass('fixed');
       });
 })
+// sale card icon 
+$(document).ready(function(){
+    $('i.sale-person').click(function(){
+        var sibling_parent = $(this).parent().siblings()
+        // console.log(sibling_parent)
+        sibling_parent.toggle('hide')
+        $(this).siblings().toggle('show')
+    })
+})
     
