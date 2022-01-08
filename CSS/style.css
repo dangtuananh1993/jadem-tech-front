@@ -143,8 +143,12 @@ p {
   display: block;
   height: 100px;
 }
+.header-bot-inner .nav-bar {
+  flex: 1;
+}
 .header-bot-inner .nav-bar .main-menu {
   display: flex;
+  margin-left: 100px;
   align-items: center;
 }
 .header-bot-inner .nav-bar .main-menu .menu-item {
@@ -249,12 +253,47 @@ p {
 .header-bot-inner .nav-bar .main-menu .menu-item .menu-item-a:hover::after {
   width: 100%;
 }
+.header-bot-inner .header-bot-search-outer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: flex-end;
+}
+.header-bot-inner .header-bot-search-bar {
+  display: none;
+}
+.header-bot-inner .header-bot-search-bar-outer {
+  position: relative;
+  width: 200px;
+  z-index: 10;
+}
+.header-bot-inner .header-bot-search-bar-outer input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #0000FF;
+  padding: 0 20px;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+.header-bot-inner .header-bot-search-bar-outer input:focus {
+  outline: 1px solid #0000FF;
+}
+.header-bot-inner .header-bot-search-bar-outer i {
+  position: absolute;
+  right: 15px;
+  top: 40%;
+  color: #0000FF;
+}
 .header-bot-inner .header-bot-search {
   font-size: 18px;
   padding: 10px 12px;
   border: 2px solid #0000FF;
   border-radius: 50%;
+  width: 46px;
+  height: 48px;
   color: #0000FF;
+  box-sizing: border-box;
   transition: all, 0.2s;
   -webkit-transition: all, 0.2s;
   -moz-transition: all, 0.2s;
@@ -1149,6 +1188,11 @@ p {
 }
 .address-outer p {
   margin-bottom: 10px;
+}
+
+.contact-form .wpcf7 p {
+  width: 50%;
+  display: inline-block;
 }
 
 .category-news .category-tab {
